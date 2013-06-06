@@ -1,0 +1,24 @@
+#
+# Makefile to make driver analysis program
+#
+#
+FFLAG = 
+#
+# -- executable name
+#
+DV = /home/cinabro/LSST/lsstsimlib.out
+#
+# -- library search path
+#
+# -- my stuff
+#
+MYFOR = /home/cinabro/LSST/lsstsimlib.f
+MYOBJ = /home/cinabro/LSST/lsstsimlib.o
+#
+# -- action
+#
+$(DV):  $(MYOBJ)
+	gfortran $(MYOBJ) $(FFLAG) $(MYLIB) -L/mnt/wsd/usr/lib/gcc-lib/i386-redhat-linux/egcs-2.90.29 -f2c -o $(DV)
+#
+$(MYOBJ): $(MYFOR)
+	gfortran -c $(MYFOR) -o $(MYOBJ)

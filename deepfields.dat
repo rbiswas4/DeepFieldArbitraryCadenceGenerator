@@ -1,0 +1,127 @@
+This is simply a list of the deep fields that apper in the
+existing LSST Opsim outputs.  They are a useful starting point
+for your own version of a deep field survey  The numbers are approximate.
+The cadences do not account for gaps during moon bright time, when
+the deep fields are not observed in the shorter wavelength filters.
+The exposure time is correct on average.  The Opsim tries to insure
+that each deep field observing night goes to the same depth so the
+nightly exposure time varies a bit depending on sky noise.  There are 
+23 different fields that have been used for deep observations in the 
+various LSST Opsims.  The field ID's are constants across the various
+versions of the Opsim.  I do not know if the integer ID means anything.
+
+Pleas read carefully.  Comments about each Opsim appear after each list.
+
+Opsim Version: 8_27 (cadence in days, exposure in seconds)
+u_cad u_exp g_cad g_exp r_cad r_exp i_cad i_exp z_cad z_exp Y_cad Y_exp
+3     680   2     640   2     680   2     680   2     680   2     680
+FieldID RA (deg)   DEC (deg)
+764       8.263408 -45.302692
+1427     53.008961 -27.438828 
+2412     34.393318  -5.090317
+2786    150.361542   2.836478
+
+These are the 4 Science Council Deep Fields.  They appear in many of the
+Opsims.
+
+Opsim Version: 2_168 (cadence in days, exposure in seconds)
+u_cad u_exp g_cad g_exp r_cad r_exp i_cad i_exp z_cad z_exp Y_cad Y_exp
+3     680   2     680   2     680   2     680   2     680   2     680
+FieldID RA (deg)   DEC  (deg)
+764       8.263408 -45.302692
+1427     53.008961 -27.438828 
+2412     34.393318  -5.090317
+2786    150.361542   2.836478
+
+311     335.944427 -62.020821
+519      69.453789 -53.470478
+526     352.377411 -53.305866
+2082    209.882553 -12.400555
+2712     20.370150   1.464076
+2731    333.402222   1.953151
+
+The additional six here are suggestions of the Deep Drilling Cosmology
+Group.
+
+All the below Opsims have a bug in them.  The exposure time is 2 times
+what they were meant to be.  Easy to fix in SNANA, but take care making
+comparisons.  I have listed the exposure time that appears in the Opsim/2.
+
+Opsim Version: 8_26 (cadence in days, exposure in seconds)
+u_cad u_exp g_cad g_exp r_cad r_exp i_cad i_exp z_cad z_exp Y_cad Y_exp
+3     680   2     680   2     680   2     680   2     680   2     680
+FieldID RA (deg)   DEC (deg)
+764       8.263408 -45.302692
+1427     53.008961 -27.438828 
+2412     34.393318  -5.090317
+2786    150.361542   2.836478
+
+Opsim Version: 7_77 (cadence in days, exposure in seconds)
+u_cad u_exp g_cad g_exp r_cad r_exp i_cad i_exp z_cad z_exp Y_cad Y_exp
+            2     680   2     680   2     680   2     680   2     680
+FieldID RA (deg)   DEC (deg)
+1427     53.008961 -27.438828 
+2412     34.393318  -5.090317
+2786    150.361542   2.836478
+
+290     349.385406 -63.320858
+386       2.983900 -58.588814
+557      17.598473 -52.458981
+730      23.867247 -46.169689
+744       0.000000 -45.524372
+953      43.309093 -39.706802
+
+This one did not do the deep fields in the u-band.  I have no idea
+where these other six deep fields came from.  764 dropped off the list
+of deep fields as it was not observed often enough during the 10 years
+of the survey to qualify as a deep field.
+
+Below I only detail deep fields that do not appear above
+
+Opsim Version: 6_27 (cadence in days, exposure in seconds)
+u_cad u_exp g_cad g_exp r_cad r_exp i_cad i_exp z_cad z_exp Y_cad Y_exp
+2     680   2     680   2     680   2     680   2     680   2     680
+FieldID RA (deg)   DEC (deg)
+385     357.014923 -58.588814
+
+This one also did (1427, 953, 557, 730, 2786, 2412, 290, 386, 744)  
+
+Opsim Version: 6_24 (cadence in days, exposure in seconds)
+
+This one had no deep fields
+
+Opsim Version: 5_211 (cadence in days, exposure in seconds)
+
+This one did 5 deep fields (1427, 2786, 290, 744, 2412)
+
+Opsim Version: 5_209 (cadence in days, exposure in seconds)
+
+This one did 5 deep fields (1427, 2786, 290, 744, 2412)
+
+As 5_211, but no u-band in the Deep Fields.
+
+Opsim Version: 5_266 (cadence in days, exposure in seconds)
+
+The bug version of 2_168
+
+Opsim Version: 5_262 (cadence in days, exposure in seconds)
+
+The bug version of 8_27
+
+Opsim Version: 3_61 (cadence in days, exposure in seconds)
+u_cad u_exp g_cad g_exp r_cad r_exp i_cad i_exp z_cad z_exp Y_cad Y_exp
+3     680   3     680   3     680   3     680   3     680   3     680
+FieldID RA (deg)   DEC (deg)
+90      300.961426 -75.516235
+97      118.839775 -74.831551
+1165     61.791061 -34.120014
+1178     58.439846 -33.824600
+1801    238.925156 -18.536631
+2509    186.361542  -2.836478
+
+This is what was used for the LSST science book.  One of the fields has
+a large Milky Way extinction and is thus not a good deep field for SN.
+This one does not have the 2x bug in the exposure times.
+
+
+
