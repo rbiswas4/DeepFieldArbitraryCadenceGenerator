@@ -9,11 +9,11 @@
 #
 # Where the lsstdfacg fortran executables live
 #
-set lsstdfacgdir = /home/cinabro/LSST
+set lsstdfacgdir=${PWD}
 #
 # where ObsimObs lives
 #
-set opsimobsdir = /home/cinabro/LSST/OpsimObs/OpsimObs-master
+set opsimobsdir="../../quickOpSims/OpsimObs"
 #
 @ NARG = $#argv
 if ( $NARG < 1 ) then
@@ -24,13 +24,13 @@ endif
 #
 # define the data files
 #
-set working = "`pwd`"
-set datastem = $argv[1]
-set datafile = "${datastem}.dat"
-set opsimobsin = "${datastem}_OpsimObs.input"
-set opsimobsout = "${datastem}_OpsimObs.output"
-set simlibin = "${datastem}_OpsimObs_pro.output"
-set simlibfile = "${datastem}.SIMLIB"
+set working="`pwd`"
+set datastem=$argv[1]
+set datafile="${datastem}.dat"
+set opsimobsin="${datastem}_OpsimObs.input"
+set opsimobsout="${datastem}_OpsimObs.output"
+set simlibin="${datastem}_OpsimObs_pro.output"
+set simlibfile="${datastem}.SIMLIB"
 #
 # First pass on the datafile
 #

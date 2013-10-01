@@ -6,24 +6,25 @@ FFLAG =
 #
 # -- executable name
 #
-DV = /home/cinabro/LSST/lsstdfacg.out
+DV = ${PWD}/lsstdfacg.out
 #
 # -- library search path
 #
 # -- my stuff
 #
-MYFOR = /home/cinabro/LSST/lsstdfacg.f
-MYOBJ = /home/cinabro/LSST/lsstdfacg.o
+MYFOR = ${PWD}/lsstdfacg.f
+MYOBJ = ${PWD}/lsstdfacg.o
 #
 # -- libraries
 #
-CERNLIBS = /belle/cern/2006/lib64/libpacklib.a \
-	   /belle/cern/2006/lib64/libmathlib.a
+#CERNLIBS = /belle/cern/2006/lib64/libpacklib.a \
+#	   /belle/cern/2006/lib64/libmathlib.a
+CERNLIBS = #/usr/local/cernlib/2006/lib/libpacklib.a /usr/local/cernlib/2006/lib/libmathlib.a
 #
 # -- action
 #
 $(DV):  $(MYOBJ)
-	gfortran $(MYOBJ) $(FFLAG) $(MYLIB) $(CERNLIBS) -L/mnt/wsd/usr/lib/gcc-lib/i386-redhat-linux/egcs-2.90.29 -f2c -o $(DV)
+	gfortran $(MYOBJ) $(FFLAG) $(MYLIB) $(CERNLIBS) -o $(DV)
 #
 $(MYOBJ): $(MYFOR)
 	gfortran -c $(MYFOR) -o $(MYOBJ)
