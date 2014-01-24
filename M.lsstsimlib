@@ -18,7 +18,7 @@ MYOBJ = lsstsimlib.o
 # -- action
 #
 $(DV):  $(MYOBJ)
-	gfortran $(MYOBJ) $(FFLAG) $(MYLIB) -L/mnt/wsd/usr/lib/gcc-lib/i386-redhat-linux/egcs-2.90.29 -o $(DV)
+	gfortran $(MYOBJ) $(FFLAG) $(MYLIB) -o $(DV)
 #
 $(MYOBJ): $(MYFOR)
 	gfortran -c $(MYFOR) -o $(MYOBJ)

@@ -10,6 +10,13 @@
 # Where the lsstdfacg fortran executables live
 #
 set lsstdfacgdir=${PWD}
+<<<<<<< HEAD
+=======
+#
+# where ObsimObs lives
+#
+set opsimobsdir="../../quickOpSims/OpsimObs"
+>>>>>>> 3c917f78c2d9f6b66062e8b81f6673d4acbfd7a1
 #
 ## where ObsimObs lives
 ##
@@ -27,6 +34,7 @@ endif
 #
 set working="`pwd`"
 set datastem=$argv[1]
+<<<<<<< HEAD
 set datafile = "${datastem}.dat"
 set opsimobsin = "${datastem}_OpsimObs.input"
 set opsimobsout = "${datastem}_OpsimObs.output"
@@ -35,6 +43,16 @@ set simlibfile = "${datastem}.SIMLIB"
 ##
 ## First pass on the datafile
 ##
+=======
+set datafile="${datastem}.dat"
+set opsimobsin="${datastem}_OpsimObs.input"
+set opsimobsout="${datastem}_OpsimObs.output"
+set simlibin="${datastem}_OpsimObs_pro.output"
+set simlibfile="${datastem}.SIMLIB"
+#
+# First pass on the datafile
+#
+>>>>>>> 3c917f78c2d9f6b66062e8b81f6673d4acbfd7a1
 echo "First pass with lsstdfacg.out on " $datafile
 ##
 cd $lsstdfacgdir
