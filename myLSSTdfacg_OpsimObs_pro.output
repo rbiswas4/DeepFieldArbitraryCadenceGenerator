@@ -2,13 +2,18 @@
 # Read 14600 weather values from CloudTololo.txt file.
 # Reading weather data file SeeingPachon.txt
 # Read 210384 weather values from SeeingPachon.txt file.
+<<<<<<< HEAD
 # Reading weather required 0.54 seconds
+=======
+# Reading weather required 0.31 seconds
+>>>>>>> 47af5d64aab37a26369c8bd2969993634f94745d
 # Reading downtime data file schedDown.conf
 # Read 98 downtime nights from schedDown.conf file.
 # Reading downtime data file unschedDown.conf
 # Read 165 downtime nights from unschedDown.conf file.
 # Reading downtime required 0.00 seconds
 # Reading observation data from file myLSSTdfacg_OpsimObs.input
+<<<<<<< HEAD
 # Reading 35896 input observations required 0.23 seconds
 # Assuming 1 exposures per visit/line in input file
 # Passed basic checks on observations.
@@ -21,6 +26,20 @@
 # Calculating depth for 1 exposures of 338.00 open shutter time
 # Calculating depth for 1 exposures of 678.00 open shutter time
 # Calculating the m5 limit for 35896 observations required 0.56 seconds
+=======
+# Reading 35896 input observations required 0.09 seconds
+# Assuming 1 exposures per visit/line in input file
+# Passed basic checks on observations.
+# Checking 35896 input observations required 0.69 seconds
+# Calculating alt/az/airmass for 35896 input observations required 0.02 seconds
+# Getting weather information for 35896 observations required 0.01 seconds
+# Calculating sun position at 35896 times required 0.03 seconds
+# Calculating moon position at 35896 times required 1.44 seconds
+# Calculating the sky brightness for 35896 observations required 0.06 seconds
+# Calculating depth for 1 exposures of 338.00 open shutter time
+# Calculating depth for 1 exposures of 678.00 open shutter time
+# Calculating the m5 limit for 35896 observations required 0.41 seconds
+>>>>>>> 47af5d64aab37a26369c8bd2969993634f94745d
 # RA  Dec  MJD  filter  Alt  Az  Airmass  Cloud RawSeeing  Seeing  SunAlt SunAz   MoonAlt  MoonAz  MoonPhase MoonPhase(opsim) SkyBrightness Maglimit SurveyNight Downtime?(0=No,1=Yes) LineComment
 69.45379 -53.47048 49355.1145833 i 66.04345 185.4312 1.090 0.00 0.742 0.814 -30.524 210.951 -4.293 91.63 67.42 69.20 20.17 25.54 2 0 519 O
 69.45379 -53.47048 49355.1238773 r 65.64596 190.2145 1.093 0.00 0.677 0.783 -31.950 207.759 -1.462 90.07 67.54 69.10 21.20 26.25 2 0 519 O
