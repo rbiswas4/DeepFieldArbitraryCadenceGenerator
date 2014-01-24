@@ -13,7 +13,7 @@ set lsstdfacgdir=${PWD}
 #
 # where ObsimObs lives
 #
-set opsimobsdir="../../quickOpSims/OpsimObs"
+set opsimobsdir="/Users/rbiswas/src/OpsimObs"
 #
 @ NARG = $#argv
 if ( $NARG < 1 ) then
